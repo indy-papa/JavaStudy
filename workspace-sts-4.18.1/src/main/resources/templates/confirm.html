@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+	<head>
+		<meta charset="UTF-8">
+		<title>Title</title>
+	</head>
+	<body>
+		<!-- 　th:inline="text"・・・タグ内のテキストを展開します。[[ ]]で囲むと、その値を表示できます。 -->
+		<span th:inline="text">
+			氏名：	[[${user.getName}]]<br>
+		　　E-Mail：	[[${user.GetEmail}]]<br>
+		    年齢：	[[${user.GetAge}]]<br>
+		</span>
+	</body>
+</html>
